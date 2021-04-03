@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>restapi</title>
+    <url>/restapi/</url>
+    <content><![CDATA[<p><strong>什么是REST API</strong></p>
+<p>REST – REpresentational State Transfer 直接翻译：表现层状态转移</p>
+<p><strong>URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作</strong></p>
+<ol>
+<li>
+<p>REST本身不实用，实用的是如何设计REST API（REST风格的网络接口）</p>
+</li>
+<li>
+<p>Server提供的RESTful API中，URL中只使用名词来获取资源</p>
+</li>
+<li>
+<p>HTTP协议里的动词来实现资源的添加，修改，删除等操作</p>
+<ul>
+<li>
+<p>GET 获取资源</p>
+</li>
+<li>
+<p>POST 新建资源 、更新资源</p>
+</li>
+<li>
+<p>PUT 更新资源</p>
+</li>
+<li>
+<p>DELETE删除资源</p>
+<p><img src="/restapi/0.jpg" alt="img"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>S和C之间传递资源的一个表现形式</p>
+<ul>
+<li>传输文本 JSON，XML</li>
+<li>传输图片 JPG，WebP</li>
+<li>压缩http传输时的数据 on-wire data compression</li>
+</ul>
+</li>
+<li>
+<p>用HTTP STatus Code传递Server的转态信息</p>
+<ul>
+<li>200 ok</li>
+</ul>
+</li>
+</ol>
+<p>web端不再使用之前典型的<strong>PHP和JSP架构</strong>，而是改为前段渲染和附带处理简单的商务逻辑（比如AngularJS或者BackBone的一些样例）</p>
+<p>Web端和Server只使用上述定义的API来传递数据和改变数据状态，格式一般是<strong>JSON</strong></p>
+<p><strong>RESTful API</strong><br>
+实用的是如何正确地理解 <strong>RESTful架构</strong>和设计好<strong>RESTful API</strong></p>
+<p><strong>首先为什么要用RESTful结构呢？</strong></p>
+<p>大家都知道&quot;古代&quot;网页是前端后端融在一起的，比如之前的PHP，JSP等。在之前的桌面时代问题不大，但是近年来移动互联网的发展，各种类型的Client层出不穷，RESTful可以通过一套统一的接口为 Web，iOS和Android提供服务。另外对于广大平台来说，比如Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是RESTful更是它们最好的选择。在RESTful架构下：</p>
+<p><img src="/restapi/1.jpg" alt="img"></p>
+<p>参考</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>tag</title>
+    <url>/tag/</url>
+    <content><![CDATA[<p>categories: Hexo初始化</p>
+<p><img src="/tag/image-20210310232227460.png" alt="image-20210310232227460"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line"></span><br><span class="line">   - init</span><br><span class="line">   - hexo</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">tags: [a,b]</span><br></pre></td></tr></table></figure>
+<p><img src="/tag/image-20210310232241434.png" alt="image-20210310232241434"></p>
+<p>description: how to tag a page</p>
+<p><img src="/tag/image-20210310232343248.png" alt="image-20210310232343248"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: title #文章標題</span><br><span class="line">date: 2016-06-01 23:47:44 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/tag/image-20210310235052422.png" alt="image-20210310235052422"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line"></span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">会创建两个index.md，写入以下内容</span><br><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-03-10 23:48:03</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2021-03-10 23:47:59</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/tag/image-20210310235233542.png" alt="image-20210310235233542"></p>
+<p><a href="http://127.0.0.1:4000/categories/index.html">http://127.0.0.1:4000/categories/index.html</a></p>
+<p><a href="http://127.0.0.1:4000/tags/index.html">http://127.0.0.1:4000/tags/index.html</a></p>
+<p><img src="/tag/image-20210310235346354.png" alt="image-20210310235346354"></p>
+<p><img src="/tag/image-20210311004456995.png" alt="image-20210311004456995"></p>
+<p>分级目录</p>
+<p>:[a,b]</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+</search>
